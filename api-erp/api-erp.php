@@ -4,7 +4,7 @@
  * Plugin URI: 
  * Description: Api synchronize users, porducts and orders
  * Version: 1.0
- * Author: Enetixsoftware - Fejer Istvan
+ * Author: Fejer Istvan
  * Author URI: 
  * Created On: 03-05-2019
  * Updated On: 03-03-2020
