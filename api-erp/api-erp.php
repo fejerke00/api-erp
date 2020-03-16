@@ -33,8 +33,8 @@ class apiERP {
 	private  $token = NULL;
 	
 	public static function init() {
-        $class = __CLASS__;
-        new $class;
+		$class = __CLASS__;
+		new $class;
 		
 		//Corn schedules interval
 		add_filter( 'cron_schedules',  array(  __CLASS__ ,'is_an_add_cron_recurrence_interval' ) );
@@ -48,7 +48,7 @@ class apiERP {
 		//Schedules actions
 		add_action('ten_minute_action_hook', array(__CLASS__,'stock_updates_schedule') );
 		add_action ('daily_action_hooke',  array(__CLASS__,'api_daily_update' ) );
-    }
+	}
 	public function __construct() {
 		
 		// TODO: Set the cron job password
@@ -76,7 +76,7 @@ class apiERP {
 		add_action( 'wp_ajax_update_stock', array($this, 'update_stocks'));
 		add_action( 'wp_ajax_delet_log', array($this, 'delet_log'));	
 		add_action( 'wp_ajax_show_log', array($this, 'show_log'));	
-    }
+	}
 
 	/********************************************************************************
 	/************************************Admin page related********************************
